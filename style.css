@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: blanchedalmond;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container,.links,.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position:absolute;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.one{
+    background-color: green;
+}
+.two{
+    background-color: red;
+}
+.three{
+    background-color: blue;
+}
+.four{
+    background-color: white;
+}
+.five{
+    background-color: RED;
+}
+.display{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.container{
+    position: relative;
+    top: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    column-gap: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.button{
+    border: none;
+}
+.button i{
+    pointer-events: none;
+}
+.button:disabled {
+    color: #b3b3b3;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.button,
+.link {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    color: #666666;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.links {
+    column-gap: 12px;
+}
+.link {
+    font-weight: 500;
+    text-decoration: none;
+}
+.button:hover,
+.link:hover {
+    color: #fff;
+    background: #4070f4;
+}
+.link.active {
+    color: #fff;
+    background: #4070f4;
+}

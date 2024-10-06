@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <title>Pagination</title>
+</head>
+<body>
+    <div class="divContainer">
+        <div class="box one display">one</div>
+        <div class="box two hide">two</div>
+        <div class="box three hide">three</div>
+        <div class="box four hide">four</div>
+        <div class="box five hide">five</div>
+    </div>
+    <div class="container">
+        <button class="button" id="startBtn" disabled> <i class="fa-solid fa-angles-left"></i></button>
+        <button class="button preNex" id="preBtn" disabled> <i class="fa-solid fa-angle-left"></i></button>
+        <div class="links">
+            <a href="#" class="link active">1</a>
+            <a href="#" class="link">2</a>
+            <a href="#" class="link">3</a>
+            <a href="#" class="link">4</a>
+            <a href="#" class="link">5</a>
+        </div>
+        <button class="button preNex" id="nexBtn"> <i class="fa-solid fa-angle-right"></i></button>    
+        <button class="button" id="endBtn"> <i class="fa-solid fa-angles-right"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
